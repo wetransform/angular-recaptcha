@@ -156,11 +156,14 @@
                 }, 25);
             } else {
                 // Generate link on demand
+                // Uncomment this if loading the recaptcha script when not found is desired 
+                /*
                 var script = $window.document.createElement('script');
                 script.async = true;
                 script.defer = true;
                 script.src = 'https://www.google.com/recaptcha/api.js?onload='+provider.onLoadFunctionName+'&render=explicit';
                 $document.find('body')[0].appendChild(script);
+                */
             }
 
             return {
